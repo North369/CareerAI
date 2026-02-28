@@ -25,7 +25,7 @@ SECRET_KEY = ['*']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']# Tạm thời để dấu sao như hôm qua bạn làm
+ALLOWED_HOSTS = ['careerai-2bk3.onrender.com', 'localhost', '127.0.0.1']# Tạm thời để dấu sao như hôm qua bạn làm
 
 
 # Application definition
@@ -52,6 +52,10 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', # Thêm dòng này
     # ... các dòng khác
+]MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Thêm dòng này
+    # ... các dòng khác giữ nguyên
 ]
 
 ROOT_URLCONF = 'site1.urls'
