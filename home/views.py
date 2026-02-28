@@ -1,15 +1,14 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Trang chủ nằm trong app home
+# 1. Trang chủ: gọi file home.html trong thư mục home
 def get_home(request):
     return render(request, 'home/home.html')
 
-# Trang app1 nằm trong thư mục templates của app1
+# 2. Trang App1: gọi file app1.html trong thư mục app1
 def app1_view(request):
-    return render(request, 'app1/app1.html') 
+    return render(request, 'app1/app1.html')
 
-# Trang đăng ký (Nếu bạn chưa tạo register.html thì dùng tạm home.html để không bị lỗi 500)
+# 3. Trang Đăng ký: Vì bạn chưa có file register.html nên dùng tạm HttpResponse để tránh lỗi
 def register_view(request):
-    # Nếu bạn đã có file register.html trong home/templates/home/ thì để nguyên
-    # Nếu chưa có, hãy đổi thành 'home/home.html' để test link
-    return render(request, 'home/home.html')
+    return HttpResponse("Đây là trang Đăng ký thành viên - Hệ thống đang cập nhật giao diện.")
