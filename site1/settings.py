@@ -55,9 +55,8 @@ ROOT_URLCONF = 'site1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # Sửa dòng DIRS thành dòng dưới đây:
-        'DIRS': [], # Để trống DIRS vì bạn đã bật 'APP_DIRS': True
-        'APP_DIRS': True,
+        'DIRS': [],  # ĐỂ TRỐNG DÒNG NÀY
+        'APP_DIRS': True, # GIỮ NGUYÊN LÀ TRUE
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
@@ -66,8 +65,7 @@ TEMPLATES = [
             ],
         },
     },
-]
-WSGI_APPLICATION = 'site1.wsgi.application'
+]WSGI_APPLICATION = 'site1.wsgi.application'
 
 
 # Database
