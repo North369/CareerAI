@@ -49,3 +49,17 @@ urlpatterns = [
     path('', views.get_home, name='home'),
     # Đừng khai báo app1 ở đây nếu bạn đã khai báo trong site1/urls.py
 ]
+
+
+
+
+
+
+
+
+from django.urls import path
+from .views import home_view
+
+urlpatterns = [
+    path('', home_view),
+]
