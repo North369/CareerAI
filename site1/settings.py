@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',  # App home của video trước
     'app1',  # App app1 bạn vừa tạo
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # Dòng này phải nằm ngay đây
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 ROOT_URLCONF = 'site1.urls'
 
 TEMPLATES = [
