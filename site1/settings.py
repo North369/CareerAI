@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ['*']
+SECRET_KEY = 'django-insecure-jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['careerai-2bk3.onrender.com', 'localhost', '127.0.0.1']# Tạm thời để dấu sao như hôm qua bạn làm
 
@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # Sửa dòng DIRS thành dòng dưới đây:
-        'DIRS': [BASE_DIR / 'home' / 'templates'], 
+        'DIRS': [], # Để trống DIRS vì bạn đã bật 'APP_DIRS': True
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,7 +79,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
