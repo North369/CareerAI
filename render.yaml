@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: career-ai-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn site1.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.1
+      - key: DJANGO_SETTINGS_MODULE
+        value: site1.settings
