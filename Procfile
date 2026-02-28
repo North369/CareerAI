@@ -1,1 +1,0 @@
-web: gunicorn tên_thư_mục_chứa_settings_py.wsgi

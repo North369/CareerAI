@@ -19,6 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app1/', include('app1.urls')), # Đã chạy ok ở hình image_422f7d.png
-    path('', include('home.urls')),      # Kết nối với file urls.py vừa tạo ở Bước 1
+    path('app1/', include('app1.urls')), 
+    path('', include('home.urls')),      
 ]
